@@ -1,7 +1,7 @@
 # Ant Design with Javascript
-###Packages included:
+### Packages included:
 - Ant Design with Theme Overiding (styling -> LESS)
 - Redux Toolkit
 
-###Last Update:
+### Last Update:
 - 15 Mac 2022
