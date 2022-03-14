@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 import {useEffect, useState} from "react";
+import {Button} from "antd";
 
 function App() {
 
-  const [theme, setTheme] = useState('PURPLE');
+    const [theme] = useState('PURPLE');
 
-  useEffect(() => {
-    if (theme === "DEFAULT") {
-      require('./theme/default/defaultTheme.less')
-    } else {
-      require('./theme/purple/purpleTheme.less')
-    }
-  }, [theme]);
+    useEffect(() => {
+        if (theme === "DEFAULT") {
+            require('./theme/default/defaultTheme.less')
+        } else {
+            require('./theme/purple/purpleTheme.less')
+        }
+    }, [theme]);
 
-  return (
-    <>
-      <h1>Header</h1>
-    </>
-  );
+    return (
+        <>
+            <Button type="primary">Primary Button</Button>
+        </>
+    );
 }
 
 export default App;
