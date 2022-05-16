@@ -2,6 +2,8 @@
 ### Packages included:
 - Ant Design with Theme Overiding (styling -> LESS)
 - Redux Toolkit
+- Call API using Redux Thunk
+- Axios for API calls (Multiple URL)
 
 ### Last Update:
-- 15 Mac 2022
+- 16 May 2022

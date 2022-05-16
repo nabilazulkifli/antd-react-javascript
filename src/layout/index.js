@@ -15,7 +15,7 @@ export const MainLayout = () => {
 
     useEffect(() => {
         if (!profileFeature.isLogin) {
-            navigate("/login")
+            navigate("/auth")
         }
     });
 
