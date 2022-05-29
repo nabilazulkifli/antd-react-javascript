@@ -27,13 +27,13 @@ export const DashboardView = () => {
 
     return (
         <>
-            {
+            {/* {
                 usersList.data.map((user) => {
                     return (
-                        <h1>{ user.name }</h1>
+                        <h1>{ user.username }</h1>
                     )
                 })
-            }
+            } */}
         </>
     )
 }

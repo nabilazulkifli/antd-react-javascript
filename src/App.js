@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {DashboardView} from "./pages/Dashboard";
 import {MainLayout} from "./layout";
 import {LoginView} from "./pages/Login";
+import ListingUsers from "./pages/ListingUser";
+import CreateUser from "./pages/ListingUser/createUser";
 
 function App() {
 
@@ -24,7 +26,10 @@ function App() {
                         <Route path="/" element={<LoginView/>}/>
                         <Route path="/login" element={<LoginView/>}/>
                         <Route path="/" element={<MainLayout/>}>
-                            <Route path="/dashboard" element={<DashboardView/>}/>
+                            <Route path="/dashboard" element={<DashboardView />} />
+                            <Route path="/listingUsers" element={<ListingUsers />} />
+                            <Route path="/createUsers" element={<CreateUser/>}/>
+
                         </Route>
                         <Route
                             path="*"

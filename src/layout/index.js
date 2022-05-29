@@ -14,9 +14,9 @@ export const MainLayout = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (!profileFeature.isLogin) {
-            navigate("/auth")
-        }
+        // if (!profileFeature.isLogin) {
+        //     navigate("/auth")
+        // }
     });
 
     return (
@@ -38,7 +38,7 @@ export const MainLayout = () => {
                         style={{ height: '100%', borderRight: 0 }}
                     >
                         <SubMenu key="sub1" icon={<UserOutlined />} title="subnav 1">
-                            <Menu.Item key="1">option1</Menu.Item>
+                            <Menu.Item key="1" onClick={() => navigate("/listingUsers")}>Listing User</Menu.Item>
                             <Menu.Item key="2">option2</Menu.Item>
                             <Menu.Item key="3">option3</Menu.Item>
                             <Menu.Item key="4">option4</Menu.Item>
